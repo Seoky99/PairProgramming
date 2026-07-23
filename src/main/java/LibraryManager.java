@@ -13,6 +13,7 @@ public class LibraryManager {
         bookArr[1] = ebook2;
         bookArr[2] = ebook3;
         bookArr[3] = ebook4;
+        System.out.println(ebook1);
 
         //Loop and borrow each item
         for (Book b : bookArr) {

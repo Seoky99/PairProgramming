@@ -42,4 +42,9 @@ public class EBook extends Book implements Borrowable {
             Thread.currentThread().interrupt();
         }
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " | File Size: " + this.fileSizeMB + "MB";
+    }
 }
