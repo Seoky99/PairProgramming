@@ -18,8 +18,6 @@ public class EBook extends Book implements Borrowable {
             System.out.println("Borrowed Book " + getTitle());
 
         }
-
-
     }
 
     @Override
@@ -27,10 +25,7 @@ public class EBook extends Book implements Borrowable {
         if (isBorrowed()) {
             setBorrowed(false);
             System.out.println("Return Book " + getTitle());
-
         }
-
-
     }
 
     private void downloadBook(double fileSizeInMB) {
@@ -47,7 +42,4 @@ public class EBook extends Book implements Borrowable {
             Thread.currentThread().interrupt();
         }
     }
-
-
-
 }
